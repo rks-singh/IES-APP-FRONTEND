@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { LoginComponent } from "./login/login.component";
 import { RegisterComponent } from "./register/register.component";
 
@@ -9,7 +9,7 @@ import { RegisterComponent } from "./register/register.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, LoginComponent, RegisterComponent]
+    imports: [CommonModule, RouterOutlet, RouterModule]
 })
 export class AppComponent {
   title = 'IES-APP';

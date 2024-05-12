@@ -1,3 +1,5 @@
+
+{{message}}
 <section class="bg-light py-3 py-md-5">
     <div class="container">
         <div class="row justify-content-center align-item-center">
@@ -14,21 +16,21 @@
                                 <div class="col-12">
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" name="name" id="name"
-                                            placeholder="Enter Name" required />
+                                            placeholder="Enter Name" [(ngModel)]="register.name" required />
                                         <label for="email" class="form-label">Enter Name</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating mb-3">
                                         <input type="email" class="form-control" name="email" id="email"
-                                            placeholder="name@example.com" required />
+                                            placeholder="name@example.com" [(ngModel)]="register.email" required />
                                         <label for="email" class="form-label">Enter Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating mb-3">
                                         <input type="Enter Phno" class="form-control" name="phone" id="phone"
-                                            value="" placeholder="Enter Phno" required />
+                                            value="" placeholder="Enter Phno" [(ngModel)]="register.phone"  required />
                                         <label for="password" class="form-label">Enter Phno</label>
                                     </div>
                                 </div>
@@ -39,17 +41,17 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="d-grid my-3">
-                                        <button class="btn btn-primary btn-lg" type="submit">
+                                        <button class="btn btn-primary btn-lg" type="submit" (click)="handleRegister()">
                                             Sign Up
                                         </button>
                                     </div>
                                 </div>
-                                <div class="col-12">
+                                <!-- <div class="col-12">
                                     <p class="m-0 text-secondary text-center">
                                         have an account?
-                                        <a href="#!" class="link-primary text-decoration-none">Sign In</a>
+                                        <a routerLink="login" class="link-primary text-decoration-none">Sign In</a>
                                     </p>
-                                </div>
+                                </div> -->
                             </div>
                         </form>
                     </div>
